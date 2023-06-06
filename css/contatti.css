@@ -1,0 +1,153 @@
+
+body{
+    background-color:var(--mywhite);
+}
+
+/* video frutta */
+
+.vid{
+    height: 100%;
+    width: 100%;
+    /* opacity: 0.9; */
+}
+.sectioninfo{
+height: 60vh;
+}
+
+/* opzioni di contatto */
+
+.circle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    top:235px;
+}
+
+.pluswrappers{
+    font-size: 50px;
+    color: var(--primary);
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    background-color: var(--accent1);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.moved{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    transition: 1s;
+    background-size: cover;
+    cursor: pointer;
+    text-align: center;
+    font-size: 50px;
+    color: var(--primary);
+}
+.moved:hover{
+    transition: 0.8s;
+    color: var(--accent2);
+}
+/*  bottone maps */
+.maps{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.maps:hover{
+    width: 600px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+/* bottone call */
+
+.closebtn{
+    cursor: pointer;
+}
+
+.w3-modal-content-phone{
+    position: absolute;
+    top:240px;
+    background-color: rgba(0, 0, 255, 0.315);
+    border: solid whitesmoke 1px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.callNumber{
+    width:200px;
+    text-align: center;
+    top: 10%;
+    padding-top: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.sendmail{
+    width:200px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* bottone message */
+
+#textMessage{
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+.w3-modal-content-message{
+    position: absolute;
+    padding: 30px;
+    right:340px;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0, 0, 255, 0.315);
+    border-radius: 15px;
+    top:-100px;
+}
+
+.btnsendmessage{
+    border-radius: 5px;
+    background-color: var(--accent2);
+    width: 50px;
+    text-align: center;
+    border: none;
+}
+
+/* bottone e mail */
+
+
+.w3-modal-content-mail{
+    position: absolute;
+    bottom: 240px;
+    background-color: rgba(0, 0, 255, 0.315);
+    border: solid whitesmoke 1px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+/* footer */
+
+.footercontact{
+    margin-top: 20%;
+}
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adotta il tuo orto!</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/orto.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="shortcut icon" href="/media/logo.png" type="image/x-icon">
+    </head>
+<body>
+    <header class="ortodetailsbackground  h-100">
+        <!-- inizio navbar -->
+        <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top ">
+            <div class="container-fluid">
+                <img id="loghetto1" class="logo" src="/media/logo.png" alt="">
+                <img id="loghetto2" class="logo  d-none" src="/media/logo2.png" alt="">
+                <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-arrow-down iconbtn fa-2x" id="navIcon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item ">
+                            <a class="navcustom mx-3 " aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="navcustom mx-3 " href="/negozio.html">Negozio</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="navcustom mx-3" href="#">La tua cassetta <i class="fa-solid fa-inbox"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navcustom mx-3 disabled" href="/contatti.html" tabindex="-1" aria-disabled="true">Contatti</a>
+                        </li>
+                    </ul>
+                    <a id="orto2" class="navcustomSelcted mx-3 me-5" href="#">Adotta il tuo orto!</a>
+                    <form class="d-flex">
+                        <input class="formcustom me-2" type="search" placeholder="Cosa cerchi?" aria-label="Search">
+                        <button class="btncustom me-2 " type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- fine navbar -->
+        <!-- inizio details -->
+        <section class="container-fluid">
+            <div class="row justify-content-center flex-column">
+                    <h2 id="h2orto" class="col-12 textcolorAccent1 details text-start px-5">Adotta il tuo ORTO!</h2>
+                    <P class="col-12 col-md-6 fs-3 textcolorMywhite text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+                    <p class="col-12 col-md-6 fs-3 textcolorMywhite text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <p class="col-12 col-md-6 fs-3 textcolorMywhite text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            </div>
+        </section>
+        <!-- fine details -->
+        <!--  inizio card details -->
+        <section class="py-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="card bg-c-blue order-card">
+                                        <div class="card-block">
+                                            <h4 class="m-b-20">Delega il Fattore</h4>
+                                            <h2 class="text-right"><i class="fa-solid fa-handshake-angle"></i><span>Gestione Orto</span></h2>
+                                            <p class="m-b-0">Orti Delegati<span class="f-right">138</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="card bg-c-green order-card">
+                                        <div class="card-block">
+                                            <h4 class="m-b-20">Ricevi il Raccolto</h4>
+                                            <h2 class="text-right"><i class="fa fa-rocket f-left"></i><span>A casa tua</span></h2>
+                                            <p class="m-b-0">Raccolti Spediti<span class="f-right">793</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="card bg-c-yellow order-card">
+                                        <div class="card-block">
+                                            <h4 class="m-b-20">Rinnova Abbonamento</h4>
+                                            <h2 class="text-right"><i class="fa fa-refresh f-left"></i><span>Stagionale</span></h2>
+                                            <p class="m-b-0">Abbonati Attuali<span class="f-right">857</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="card bg-c-pink order-card">
+                                        <div class="card-block">
+                                            <h4 class="m-b-20">Pagamento Sicuro</h4>
+                                            <h2 class="text-right"><i class="fa fa-credit-card f-left"></i><span>486</span></h2>
+                                            <p class="m-b-0">Clienti Protetti<span class="f-right">All</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- fine card details -->
+    <!-- piani abbonamento -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <section class="divided clearfix">
+                            <div class="container">
+                                <div class="row py-5">
+                                    <div class="col col-12 col-sm-12 col-md-6 p-lg-5">
+                                        <div class="p-5">
+                                            <h5 class="h5 text-muted">Bootstrap </h5>
+                                            <h1 class="h1 mb-5">Spacing </h1>
+                                            <p>Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an element’s appearance.</p>
+                                        </div>
+                                    </div>
+                                    <div class="versus">VS</div>
+                                    <div class="col col-12 col-sm-12 col-md-6 p-lg-5">
+                                        <div class="p-5">
+                                            <h5 class="h5 text-muted">Bootstrap</h5>
+                                            <h1 class="h1 mb-5">Spacing </h1>
+                                            <p>Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an element’s appearance.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="border-bottom">
+                            <div class="container">
+                                <div class="row text-center py-5">
+                                    <div class="col col-12 border-bottom border-sm-bottom border-md-bottom-0 border-md-right col-sm-12 col-md-6 p-5"> <img class="m-auto" width="40px" src="https://semantic-ui.com/images/icons/mobile.png">
+                                        <h2 class="h3 mt-3 mb-5 text-muted">Bootstrap Spacing</h2>
+                                        <p>Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an element’s appearance. </p>
+                                    </div>
+                                    <div class="col col-12 col-sm-12 col-md-6 p-5"> <img class="m-auto" width="40px" src="https://semantic-ui.com/images/icons/mobile.png">
+                                        <h2 class="h3 mt-3 mb-5 text-muted">Bootstrap Spacing</h2>
+                                        <p>Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an element’s appearance. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  fine piani abbonamento -->
+    <!-- inizio footer -->
+    <footer class="bgmyBlack">
+        <div class="container-fluid bgMyblack">
+            <div class="row p-4 ">
+                <div class="col-12 col-md-4 border-end border-5">
+                    <h2 class="py-3 text-center textcolorAccent2 fs-1" >PrestoFrutta!.it</h2>
+                    <p class="text-center textcolorMywhite fs-5">Via Udine 41 - Gallipoli(LE)</p>
+                    <p class="text-center textcolorMywhite fs-5">P.Iva 546846546546854</p>
+                    <p class="text-center textcolorMywhite fs-5">undefined@prestofrutta.it</p>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column">
+                    <h2 class="py-3 text-center textcolorAccent2 fs-1">Ritorna</h2>
+                    <a class="linkfooter text-center textcolorMywhite text-decoration-none fs-5" href="#slideGallery">Slide Gallery</a>
+                    <a class="linkfooter text-center textcolorMywhite text-decoration-none fs-5" href="#ilNostroTeam">Our Team</a>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column align-items-center py-3 border-start border-5">
+                    <a href="https://it-it.facebook.com/" target = "_blank"><i><img class="py-2" src="/media/facebook.png" alt="pagina facebook"></i></a>
+                    <a href="https://www.instagram.com/" target = "_blank"><i><img class="py-2" src="/media/instagram.png" alt="profilo instagram"></i></a>
+                    <a href="https://www.whatsapp.com/?l=it" target = "_blank"><i><img class="py-2" src="/media/whatsapp.png" alt="whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- fine footer -->
+    
+
+
+
+
+
+
+
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<!-- js swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- js mdb -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+<!-- js aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<!--js custom  -->
+    <script src="/js/script.js"></script>
+    <script src="/js/orto.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* palette colori */
+
+:root {
+    --primary: rgb(157, 166, 239);
+    --secondary: rgb(230, 161, 233);
+    --accent1: rgb(255, 177, 156);
+    --accent2: rgb(255, 210, 117);
+    --mywhite: rgb(245, 245, 245);
+    --myblack: rgb(107, 107, 107);
+}
+
+/* font generale sito */
+* {
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    /* font-family: 'Oswald', sans-serif; */
+}
+
+/* Classi custom */
+
+
+.textcolorPrimary{
+    color:var(--primary);
+}
+
+.textcolorSecondary{
+    color:var(--secondary);
+}
+
+.textcolorAccent1{
+    color:var(--accent1);
+}
+
+.textcolorAccent2{
+    color:var(--accent2);
+}
+
+.textcolorMyblack{
+    color:var(--myblack);
+}
+
+.textcolorMywhite{
+    color:var(--mywhite);
+}
+
+.bgAccent1{
+    background-color:var(--accent1);
+}
+
+.bgAccent2{
+    background-color:var(--accent2);
+}
+
+.bgcolorBlackTransparent {
+    background-color: rgba(0, 0, 0, 0.458);
+}
+
+.bgPrimary {
+    background-color: var(--primary);
+}
+
+.bgSecondary {
+    background-color: var(--secondary);
+}
+
+.bgmyBlack {
+    background-color: var(--myblack);
+}
+
+.bgmyWhite {
+    background-color: var(--mywhite);
+}
+
+/*Fine Classi custom */
+
+
+
+/* navbar */
+.logo {
+    height: 40px;
+}
+
+.logo1 {
+    display: none;
+}
+
+.logo2 {
+    display: none;
+}
+
+.iconbtn {
+    color: var(--mywhite);
+}
+
+#mainNavbar {
+    transition: 0.4s;
+}
+
+.navcustom {
+    color: var(--accent2);
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+
+.navcustom:hover {
+    color: var(--primary);
+}
+
+.navcustomSelcted {
+    color: var(--accent1);
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.navcustomSelcted:hover {
+    color: var(--primary);
+}
+
+.formcustom {
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.btncustom {
+    color: var(--myblack);
+    background-color: var(--accent2);
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.btncustom:hover {
+    background-color: var(--primary);
+}
+
+#navIcon {
+    transition: 0.6s;
+}
+
+/* fine navbar */

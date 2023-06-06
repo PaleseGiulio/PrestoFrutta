@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrestoFrutta.it</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/media/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top ">
+        <div class="container-fluid">
+            <img id="loghetto1" class="logo" src="/media/logo.png" alt="">
+            <img id="loghetto2" class="logo  d-none" src="/media/logo2.png" alt="">
+            <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-arrow-down iconbtn fa-2x" id="navIcon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item ">
+                        <a class="navcustomSelcted mx-3 " href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="navcustom mx-3 " href="/negozio.html">Negozio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="navcustom mx-3" href="#">La tua cassetta <i class="fa-solid fa-inbox"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navcustom mx-3 " href="contatti.html" tabindex="-1" aria-disabled="true">Contatti</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="formcustom me-2" type="search" placeholder="Cosa cerchi?" aria-label="Search">
+                    <button class="btncustom me-2 " type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header class="container-fluid headerCustom">
+        <div class="row vh-100">
+            <div class="col-12 d-flex align-items-center justify-content-center  flex-column ">
+                <a id="orto" class="navcustom " href="/orto.html">Adotta il tuo orto!</a>
+                <h1 class="titolCustom bgcolorBlackTransparent bounce-in-top">Presto<span class="frutta">Frutta!</span>.it</h1>
+            </div>
+        </div>
+    </header>
+    <section class="container d-flex align-items-center flex-column">
+        <div class="row my-5 ">
+            <div class="col-12 col-md-6 ">
+                <img class="img-fluid my-5" data-aos-duration="1500" data-aos="zoom-in-down"
+                    src="/media/banana-g642568b78_1920.jpg" alt="">
+                <img class="img-fluid my-5" data-aos-duration="1500" data-aos="zoom-in-down" src="/media/pesche.jpg"
+                    alt="">
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center flex-column ">
+                <h2 id="h2start" class="numeri textcolorMyblack text-center">Un pò di numeri</h2>
+                <p class="pcustom text-center"><span id="first"
+                        class="incrementatore d-block textcolorMyblack text-center">0</span>Clienti soddisfatti</p>
+                <p class="pcustom text-center"><span id="second"
+                        class="incrementatore d-block textcolorMyblack text-center">0</span>Cassette vendute</p>
+                <p class="pcustom text-center"><span id="third"
+                        class="incrementatore d-block textcolorMyblack text-center">0</span>Recensioni</p>
+            </div>
+        </div>
+    </section>
+    <!-- slide gallery -->
+    <section id="slideGallery" class="bgimage">
+        <div class="container py-5 ">
+            <div class="row my-5 ">
+                <h2 class="galleryTitol my-5">Slide-Gallery</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/300?random=1" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/300?random=2" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/300?random=3" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/300?random=4" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/300?random=5" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/300?random=6" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/300?random=7" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/300?random=8" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/300?random=9" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="container h-100">
+                    <div class="row my-5  ">
+                        <div class="col-12  ">
+                            <p class="citazione text-center">La nostra più grande debolezza sta nel rinunciare.
+                                Il modo più sicuro per riuscire è sempre provarci
+                                ancora una volta.
+                                (Thomas Edison)</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Card team -->
+                <div id="ilNostroTeam" class="container py-5">
+                    <div class="row text-center text-white">
+                        <div class="col-lg-8 mx-auto">
+                            <h1 class="display-1">Team Page</h1>
+                            <p class="mt-5 fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio aperiam sequi aut unde sit! Saepe, 
+                                earum cumque, sint corporis cupiditate eaque doloremque commodi aperiam vero, vitae aut vel impedit. Omnis.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="row text-center">
+
+                        <div class="col-xl-3 col-sm-6">
+                            <div class=" rounded py-2 px-4">
+                                <img src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg" alt="" width="100"
+                                    class="rounded-circle mb-3 img-thumbnail imageCardCustom">
+                                <h5 class="mb-0 text-dark">Manuella Nevoresky</h5><span
+                                    class="small text-dark text-uppercase">CEO - Founder</span>
+                                <ul class="social mb-0 list-inline mt-3 fs-3">
+                                    <li class="list-inline-item"><a href="#" class="social-link">
+                                        <i class="fa-brands textcolorPrimary fa-square-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link">
+                                        <i class="fa-brands textcolorPrimary fa-square-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link">
+                                        <i class="fa-brands textcolorPrimary fa-square-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link">
+                                        <i class="fa-brands textcolorPrimary fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6">
+                            <div class=" rounded py-2 px-4">
+                                <img src="/media/giulio2.jpg" alt="" width="100"
+                                    class="rounded-circle mb-3 img-thumbnail imageCardCustom">
+                                <h5 class="mb-0 text-dark">Giulio Palese</h5><span
+                                    class="small text-uppercase text-dark">CEO - Founder</span>
+                                <ul class="social mb-0 list-inline mt-3 fs-3">
+                                    <li class="list-inline-item"><a href="#" class="social-link">
+                                        <i class="fa-brands textcolorPrimary fa-square-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link">
+                                        <i class="fa-brands textcolorPrimary fa-square-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link">
+                                        <i class="fa-brands textcolorPrimary fa-square-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link">
+                                        <i class="fa-brands textcolorPrimary fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6">
+                            <div class=" rounded py-2 px-4">
+                                <img src="/media/antonio.jpg" alt="" width="100"
+                                    class="rounded-circle mb-3 img-thumbnail imageCardCustom">
+                                <h5 class="mb-0 text-dark">Antonio Abatelillo</h5><span
+                                    class="small text-uppercase text-dark">CEO - Founder</span>
+                                    <ul class="social mb-0 list-inline mt-3 fs-3">
+                                        <li class="list-inline-item"><a href="#" class="social-link">
+                                            <i class="fa-brands textcolorPrimary fa-square-facebook"></i></a></li>
+                                        <li class="list-inline-item"><a href="#" class="social-link">
+                                            <i class="fa-brands textcolorPrimary fa-square-twitter"></i></a></li>
+                                        <li class="list-inline-item"><a href="#" class="social-link">
+                                            <i class="fa-brands textcolorPrimary fa-square-instagram"></i></a></li>
+                                        <li class="list-inline-item"><a href="#" class="social-link">
+                                            <i class="fa-brands textcolorPrimary  fa-linkedin"></i></a></li>
+                                    </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6">
+                            <div class=" rounded  py-2 px-4">
+                                <img src="https://bootstrapious.com/i/snippets/sn-team/teacher-7.jpg" alt="" width="100"
+                                    class="rounded-circle mb-3 img-thumbnail imageCardCustom">
+                                <h5 class="mb-0 text-dark">John Tarly</h5><span
+                                    class="small text-uppercase text-dark">CEO - Founder</span>
+                                    <ul class="social mb-0 list-inline mt-3 fs-3">
+                                        <li class="list-inline-item"><a href="#" class="social-link">
+                                            <i class="fa-brands textcolorPrimary fa-square-facebook"></i></a></li>
+                                        <li class="list-inline-item"><a href="#" class="social-link">
+                                            <i class="fa-brands textcolorPrimary fa-square-twitter"></i></a></li>
+                                        <li class="list-inline-item"><a href="#" class="social-link">
+                                            <i class="fa-brands textcolorPrimary fa-square-instagram"></i></a></li>
+                                        <li class="list-inline-item"><a href="#" class="social-link">
+                                            <i class="fa-brands textcolorPrimary fa-linkedin"></i></a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <footer class="bgmyBlack">
+        <div class="container-fluid bgMyblack">
+            <div class="row p-4 ">
+                <div class="col-12 col-md-4 border-end border-5">
+                    <h2 class="py-3 text-center textcolorAccent2 fs-1" >PrestoFrutta!.it</h2>
+                    <p class="text-center textcolorMywhite fs-5">Via Udine 41 - Gallipoli(LE)</p>
+                    <p class="text-center textcolorMywhite fs-5">P.Iva 546846546546854</p>
+                    <p class="text-center textcolorMywhite fs-5">undefined@prestofrutta.it</p>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column">
+                    <h2 class="py-3 text-center textcolorAccent2 fs-1">Ritorna</h2>
+                    <a class="linkfooter text-center textcolorMywhite text-decoration-none fs-5" href="#slideGallery">Slide Gallery</a>
+                    <a class="linkfooter text-center textcolorMywhite text-decoration-none fs-5" href="#ilNostroTeam">Our Team</a>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column align-items-center py-3 border-start border-5">
+                    <a href="https://it-it.facebook.com/" target = "_blank"><i><img class="py-2" src="/media/facebook.png" alt="pagina facebook"></i></a>
+                    <a href="https://www.instagram.com/" target = "_blank"><i><img class="py-2" src="/media/instagram.png" alt="profilo instagram"></i></a>
+                    <a href="https://www.whatsapp.com/?l=it" target = "_blank"><i><img class="py-2" src="/media/whatsapp.png" alt="whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- js bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- js swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- js mdb -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+    <!-- js aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    <!--js custom  -->
+        <script src="/js/script.js"></script>
+        <script src="/js/home.js"></script>
+</body>
+
+</html>

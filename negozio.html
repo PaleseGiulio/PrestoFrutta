@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negozio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/negozio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/media/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="copertinacatalogo">
+        <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top ">
+            <div class="container-fluid">
+                <img id="loghetto1" class="logo" src="/media/logo.png" alt="">
+                <img id="loghetto2" class="logo  d-none" src="/media/logo2.png" alt="">
+                <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-arrow-down iconbtn fa-2x" id="navIcon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item ">
+                            <a class="navcustom mx-3 " href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="navcustomSelcted mx-3 " href="/negozio.html">Negozio</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="navcustom mx-3" href="#">La tua cassetta <i class="fa-solid fa-inbox"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navcustom mx-3 " href="/contatti.html" tabindex="-1" aria-disabled="true">Contatti</a>
+                        </li>
+                    </ul>
+                    <a id="orto" class="navcustom mx-3 me-5" href="/orto.html">Adotta il tuo orto!</a>
+                    <form class="d-flex">
+                        <input class="formcustom me-2" type="search" placeholder="Cosa cerchi?" aria-label="Search">
+                        <button class="btncustom me-2 " type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <section class="container-fluid vh-100">
+            <div class="row justify-content-start">
+                <div class="col-12 col-md-6 accordioncustom">
+
+                    <div class="accordion" id="accordionExample">
+                        <h2 class="display-2 textcolorAccent1 ">Filtra per</h2>
+                        <!-- filtro per categoria -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Categorie
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div id="categorywrapper" class="accordion-body">
+                                    <!-- radios button -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="All" checked>
+                                        <label class="form-check-label" for="all">
+                                            Tutte le categorie
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- filtro per prezzo -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Prezzo
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div id="pricewrapper" class="accordion-body">
+                                    <!-- radios button -->
+                                    <input id="inputprices" class="w-50" type="range">
+                                    <div>
+                                        <span id="incrementnumber">
+                                            0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- filtro per parola -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Nome
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div id="namewrapper" class="accordion-body">
+                                    <!-- radios button -->
+                                    <input type="text" placeholder="Cerca Prodotto" id="nameinput">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- sezione card -->
+    <section>
+        <div class="container py-5">
+            <div id="cardswrapper" class="row">
+                
+            </div>
+        </div>
+    </section>
+    <footer class="bgmyBlack">
+        <div class="container-fluid bgMyblack">
+            <div class="row p-4 ">
+                <div class="col-12 col-md-4 border-end border-5">
+                    <h2 class="py-3 text-center textcolorAccent2 fs-1" >PrestoFrutta!.it</h2>
+                    <p class="text-center textcolorMywhite fs-5">Via Udine 41 - Gallipoli(LE)</p>
+                    <p class="text-center textcolorMywhite fs-5">P.Iva 546846546546854</p>
+                    <p class="text-center textcolorMywhite fs-5">undefined@prestofrutta.it</p>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column">
+                    <h2 class="py-3 text-center textcolorAccent2 fs-1">Ritorna</h2>
+                    <a class="linkfooter text-center textcolorMywhite text-decoration-none fs-5" href="#slideGallery">Slide Gallery</a>
+                    <a class="linkfooter text-center textcolorMywhite text-decoration-none fs-5" href="#ilNostroTeam">Our Team</a>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column align-items-center py-3 border-start border-5">
+                    <a href="https://it-it.facebook.com/" target = "_blank"><i><img class="py-2" src="/media/facebook.png" alt="pagina facebook"></i></a>
+                    <a href="https://www.instagram.com/" target = "_blank"><i><img class="py-2" src="/media/instagram.png" alt="profilo instagram"></i></a>
+                    <a href="https://www.whatsapp.com/?l=it" target = "_blank"><i><img class="py-2" src="/media/whatsapp.png" alt="whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- js swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- js mdb -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+    <!-- js aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--js custom  -->
+    <script src="/js/script.js"></script>
+    <script src="/js/negozio.js"></script>
+</body>
+
+</html>
